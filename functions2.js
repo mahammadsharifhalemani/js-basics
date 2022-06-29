@@ -1,5 +1,9 @@
-function greet(name='bread'){
-    console.log("shop",name)
+function sum(x){
+	return function(y){
+  	return function(z){
+    	return x + y + z;
+    }
+  }
 }
-var name = "bread"
-greet(name);
+
+console.log(sum(1)(2)(3))
